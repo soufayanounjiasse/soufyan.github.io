@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mongbet Njiasse Soufiane - Portfolio</title>
+    <meta name="description" content="Portfolio de Mongbet Njiasse Soufiane, étudiant en Master Systèmes d'Information et Génie Logiciel, développeur web et mobile (Flutter, Laravel, Spring Boot) et bases de données.">
+    <meta property="og:title" content="Mongbet Njiasse Soufiane - Portfolio">
+    <meta property="og:description" content="Étudiant en Master Systèmes d'Information et Génie Logiciel. Développement web et mobile, bases de données, Power BI et Big Data.">
+    <meta property="og:type" content="website">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="formAlert" class="alert alert-success alert-floating alert-dismissible fade show" role="alert" style="display:none">
+        <i class="fas fa-check-circle me-2"></i><span id="formAlertText"></span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Mongbet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Formation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Expérience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#demos">Démos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content text-center">
+                <img src="assets/images/profile.jpg" alt="Mongbet Njiasse Soufiane" class="profile-img mb-4">
+                <h1 class="display-4 fw-bold">Mongbet Njiasse Soufiane</h1>
+                <p class="lead">Étudiant en Master Informatique (SIGL)</p>
+                <p class="mb-4">Développeur Web &amp; Mobile | Bases de données &amp; Systèmes d'information</p>
+                <div class="languages mb-4">
+                    <span class="badge bg-primary me-2"><i class="fas fa-language me-1"></i> Français</span>
+                    <span class="badge bg-primary me-2"><i class="fas fa-language me-1"></i> Anglais</span>
+                    <span class="badge bg-primary me-2"><i class="fas fa-language me-1"></i> Espagnol</span>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-custom btn-lg me-3" onclick="scrollToSection('about')">
+                        Découvrir mon profil <i class="fas fa-arrow-down ms-2"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#cvModal">
+                        <i class="fas fa-lock me-2"></i>Télécharger mon CV
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title fade-in">À Propos de Moi</h2>
+            <div class="row align-items-center fade-in">
+                <div class="col-lg-8">
+                    <div class="about-text">
+                        <h3>Développeur Passionné par l'Innovation</h3>
+                        <p>Étudiant en Master 1 Systèmes d&#x27;Information et Génie Logiciel à l&#x27;Université de Yaoundé 1, déterminé, sérieux et autonome. Développeur full-stack passionné, avec une expérience pratique en développement web et mobile (Laravel, Flutter, Spring Boot), en bases de données (MySQL, MongoDB, Oracle) et en gestion de projets informatiques.</p>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-info-circle text-primary me-2"></i>Informations Personnelles</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-map-marker-alt me-2"></i><strong>Localisation :</strong> Yaoundé, Cameroun</li>
+                                    <li><i class="fas fa-envelope me-2"></i><strong>Email :</strong> mongbetnjiassesoufiane@gmail.com</li>
+                                    <li><i class="fas fa-phone me-2"></i><strong>Téléphone :</strong> +237 659 23 10 45</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-star text-primary me-2"></i>Qualités</h5>
+                                <div class="qualities">
+                                    <span class="badge bg-secondary me-1 mb-2">Accueillant</span>
+                                    <span class="badge bg-secondary me-1 mb-2">Dynamique</span>
+                                    <span class="badge bg-secondary me-1 mb-2">Rigoureux</span>
+                                    <span class="badge bg-secondary me-1 mb-2">Optimiste</span>
+                                    <span class="badge bg-secondary me-1 mb-2">Curieux</span>
+                                    <span class="badge bg-secondary me-1 mb-2">Travail en équipe</span>
+                                </div>
+                                <h5 class="mt-3"><i class="fas fa-heart text-primary me-2"></i>Centres d'Intérêt</h5>
+                                <div class="interests">
+                                    <span class="badge bg-info me-1 mb-2">Lecture</span>
+                                    <span class="badge bg-info me-1 mb-2">Sports</span>
+                                    <span class="badge bg-info me-1 mb-2">Musique</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="stats-card">
+                        <div class="stat-item"><i class="fas fa-graduation-cap"></i><div><span class="stat-number">Master 1</span><span class="stat-label">SIGL - Université de Yaoundé 1</span></div></div>
+                        <div class="stat-item"><i class="fas fa-briefcase"></i><div><span class="stat-number">3+</span><span class="stat-label">Stages &amp; expériences professionnelles</span></div></div>
+                        <div class="stat-item"><i class="fas fa-diagram-project"></i><div><span class="stat-number">6+</span><span class="stat-label">Projets académiques réalisés</span></div></div>
+                        <div class="stat-item"><i class="fas fa-code"></i><div><span class="stat-number">10+</span><span class="stat-label">Technologies maîtrisées</span></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Mes Compétences Techniques</h2>
+            <div class="row">
+                <div class="col-lg-6 fade-in">
+                    <h4><i class="fas fa-desktop text-primary me-2"></i>Frontend &amp; Mobile</h4>
+                    <div class="skill-item">
+                        <div class="skill-name"><i class="fab fa-flutter me-2"></i>Flutter</div>
+                        <div class="progress"><div class="progress-bar" data-width="85" style="width: 0%"></div></div>
+                        <small>85%</small>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-in">
+                    <h4><i class="fas fa-server text-primary me-2"></i>Backend, Data &amp; Autres</h4>
+                    <div class="skill-item">
+                        <div class="skill-name"><i class="fab fa-laravel me-2"></i>Laravel</div>
+                        <div class="progress"><div class="progress-bar" data-width="85" style="width: 0%"></div></div>
+                        <small>85%</small>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><i class="fas fa-database me-2"></i>MySQL</div>
+                        <div class="progress"><div class="progress-bar" data-width="85" style="width: 0%"></div></div>
+                        <small>85%</small>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><i class="fab fa-php me-2"></i>PHP</div>
+                        <div class="progress"><div class="progress-bar" data-width="80" style="width: 0%"></div></div>
+                        <small>80%</small>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><i class="fas fa-leaf me-2"></i>Spring Boot</div>
+                        <div class="progress"><div class="progress-bar" data-width="75" style="width: 0%"></div></div>
+                        <small>75%</small>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><i class="fab fa-java me-2"></i>Java</div>
+                        <div class="progress"><div class="progress-bar" data-width="75" style="width: 0%"></div></div>
+                        <small>75%</small>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><i class="fab fa-python me-2"></i>Python / Django</div>
+                        <div class="progress"><div class="progress-bar" data-width="75" style="width: 0%"></div></div>
+                        <small>75%</small>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><i class="fas fa-leaf me-2"></i>MongoDB</div>
+                        <div class="progress"><div class="progress-bar" data-width="75" style="width: 0%"></div></div>
+                        <small>75%</small>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><i class="fas fa-database me-2"></i>Oracle</div>
+                        <div class="progress"><div class="progress-bar" data-width="75" style="width: 0%"></div></div>
+                        <small>75%</small>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name"><i class="fas fa-code me-2"></i>C / C++</div>
+                        <div class="progress"><div class="progress-bar" data-width="65" style="width: 0%"></div></div>
+                        <small>65%</small>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center fade-in">
+                    <h4><i class="fas fa-tools text-primary me-2"></i>Autres Compétences</h4>
+                    <div class="other-skills">
+                        <span class="badge bg-primary me-2 mb-2">Conception de sites web</span>
+                        <span class="badge bg-primary me-2 mb-2">Développement d&#x27;applications mobile</span>
+                        <span class="badge bg-primary me-2 mb-2">Outils Office</span>
+                        <span class="badge bg-primary me-2 mb-2">Gestion des risques informatiques</span>
+                        <span class="badge bg-primary me-2 mb-2">Intégration d&#x27;APIs de paiement</span>
+                        <span class="badge bg-primary me-2 mb-2">Power BI &amp; Business Intelligence</span>
+                        <span class="badge bg-primary me-2 mb-2">Big Data (Neo4j, Trino)</span>
+                        <span class="badge bg-primary me-2 mb-2">Administration de bases de données Oracle</span>
+                        <span class="badge bg-primary me-2 mb-2">Microservices avec Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section about">
+        <div class="container">
+            <h2 class="section-title fade-in">Ma Formation</h2>
+            <div class="timeline fade-in">
+                <div class="timeline-item">
+                    <h4>Master 1 en Systèmes d&#x27;Information / Génie Logiciel</h4>
+                    <span class="text-muted">2025 - 2026 • Université de Yaoundé 1</span>
+                    <p>Formation avancée en systèmes d&#x27;information et génie logiciel : architecture logicielle, bases de données, gouvernance IT, gestion de projet, Big Data.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Licence Information and Communication Technology for Development</h4>
+                    <span class="text-muted">2023 - 2025 • Université de Yaoundé 1</span>
+                    <p>Formation en technologies de l&#x27;information et de la communication appliquées au développement.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Baccalauréat C (Mathématiques - Physiques)</h4>
+                    <span class="text-muted">2021 - 2022 • Lycée Bilingue de Koutaba</span>
+                    <p>Série scientifique, spécialité Mathématiques - Physiques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Mon Expérience Professionnelle</h2>
+            <div class="timeline fade-in">
+                <div class="timeline-item">
+                    <h4>Bénévolat - Production des cartes</h4>
+                    <span class="text-muted">2025 - Présent • Amal Constructing • Université de Yaoundé 1</span>
+                    <p>Agent chargé de la production des cartes en partenariat avec l&#x27;Université de Yaoundé 1.<br>Responsable de l&#x27;établissement des cartes professionnelles, étudiantes et du personnel universitaire.<br>Maintenance du site prodcart.net.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Stagiaire académique</h4>
+                    <span class="text-muted">2024 - 2025 • PialosTech • Obili (Camp-GP), Yaoundé</span>
+                    <p>Mise en place d&#x27;une application de création de cartes bancaires virtuelles.<br>Organisation du travail en équipe et établissement des rapports de suivi.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Stagiaire professionnel</h4>
+                    <span class="text-muted">2023 - 2024 • Smart Service Hub • Snake-Emia, Yaoundé</span>
+                    <p>Réalisation d&#x27;un module de messagerie sur l&#x27;application Amphi-mil.<br>Mise en place d&#x27;un système de génération automatique de CV.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section about">
+        <div class="container">
+            <h2 class="section-title fade-in">Mes Projets</h2>
+            <div class="row">
+                <div class="col-md-4 fade-in">
+                    <div class="project-card">
+                        <div class="project-img project-img-placeholder d-flex align-items-center justify-content-center"><i class="fas fa-code"></i></div>
+                        <div class="project-content">
+                            <h5>Système de transaction bancaire multi-opérateurs <span class="badge bg-warning ms-2">Vedette</span></h5>
+                            <p>Plateforme permettant de gérer des transactions bancaires entre plusieurs opérateurs, réalisée en équipe.</p>
+                            <div class="mb-3"><span class="badge bg-secondary me-1">Spring Boot</span><span class="badge bg-secondary me-1">MySQL</span><span class="badge bg-secondary me-1">Docker</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="project-card">
+                        <div class="project-img project-img-placeholder d-flex align-items-center justify-content-center"><i class="fas fa-code"></i></div>
+                        <div class="project-content">
+                            <h5>Maturité des données de l&#x27;Université de Yaoundé 1</h5>
+                            <p>Analyse et étude de la maturité des données de l&#x27;université, avec des tableaux de bord de visualisation.</p>
+                            <div class="mb-3"><span class="badge bg-secondary me-1">Power BI</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="project-card">
+                        <div class="project-img project-img-placeholder d-flex align-items-center justify-content-center"><i class="fas fa-code"></i></div>
+                        <div class="project-content">
+                            <h5>Système distribué de stockage multimédia</h5>
+                            <p>Conception d&#x27;un système distribué capable de stocker de grandes masses de médias.</p>
+                            <div class="mb-3"><span class="badge bg-secondary me-1">Neo4j</span><span class="badge bg-secondary me-1">Trino</span><span class="badge bg-secondary me-1">Big Data</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="project-card">
+                        <div class="project-img project-img-placeholder d-flex align-items-center justify-content-center"><i class="fas fa-code"></i></div>
+                        <div class="project-content">
+                            <h5>Application de gestion des programmes académiques</h5>
+                            <p>Application de suivi et de gestion des programmes et emplois du temps académiques.</p>
+                            <div class="mb-3"><span class="badge bg-secondary me-1">Laravel</span><span class="badge bg-secondary me-1">MySQL</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="project-card">
+                        <div class="project-img project-img-placeholder d-flex align-items-center justify-content-center"><i class="fas fa-code"></i></div>
+                        <div class="project-content">
+                            <h5>Site de gestion des infirmeries</h5>
+                            <p>Application web de gestion des dossiers et rendez-vous d&#x27;une infirmerie.</p>
+                            <div class="mb-3"><span class="badge bg-secondary me-1">PHP</span><span class="badge bg-secondary me-1">MySQL</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="project-card">
+                        <div class="project-img project-img-placeholder d-flex align-items-center justify-content-center"><i class="fas fa-code"></i></div>
+                        <div class="project-content">
+                            <h5>Jeu de devinette</h5>
+                            <p>Petit jeu interactif de devinette de nombres/mots, développé à titre individuel.</p>
+                            <div class="mb-3"><span class="badge bg-secondary me-1">Python</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demos" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Regardez mes réalisations en direct</h2>
+            <p class="text-center text-muted mb-5 fade-in">Des démonstrations vidéo de mes sites et de mes applications, pour les voir fonctionner en vrai.</p>
+            <div class="row g-4" id="demosGrid"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Contactez-moi</h2>
+            <div class="row">
+                <div class="col-md-8 fade-in">
+                    <div class="contact-form">
+                        <h4 class="mb-4">Envoyez-moi un message</h4>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3"><input type="text" name="name" class="form-control" placeholder="Votre nom" required></div>
+                                <div class="col-md-6 mb-3"><input type="email" name="email" class="form-control" placeholder="Votre email" required></div>
+                            </div>
+                            <div class="mb-3"><input type="text" name="subject" class="form-control" placeholder="Sujet" required></div>
+                            <div class="mb-3"><textarea name="message" class="form-control" rows="5" placeholder="Votre message" required></textarea></div>
+                            <button type="submit" class="btn btn-custom"><i class="fas fa-paper-plane me-2"></i>Envoyer le message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="contact-info">
+                        <h4 class="mb-4">Informations de contact</h4>
+                        <div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><strong>Adresse</strong><br>Yaoundé, Cameroun</div></div>
+                        <div class="contact-item"><i class="fas fa-phone"></i><div><strong>Téléphone</strong><br><a href="tel:+237659231045">+237 659 23 10 45</a></div></div>
+                        <div class="contact-item"><i class="fas fa-envelope"></i><div><strong>Email</strong><br><a href="mailto:mongbetnjiassesoufiane@gmail.com">mongbetnjiassesoufiane@gmail.com</a></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; <span id="year">2026</span> Mongbet Njiasse Soufiane. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links text-md-end">
+                        <a href="mailto:mongbetnjiassesoufiane@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                        <!-- Décommente et remplace VOTRE-PSEUDO une fois ton compte GitHub créé :
+                        <a href="https://github.com/VOTRE-PSEUDO" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                        -->
+                        <!-- Même chose pour LinkedIn :
+                        <a href="https://www.linkedin.com/in/VOTRE-PROFIL" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content cv-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cvModalLabel"><i class="fas fa-lock me-2"></i>Téléchargement protégé</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Le téléchargement de mon CV est soumis à autorisation. Pour l'obtenir, contactez le propriétaire du portfolio :</p>
+                    <p class="mb-3">
+                        <a href="mailto:mongbetnjiassesoufiane@gmail.com?subject=Demande%20d%27autorisation%20-%20t%C3%A9l%C3%A9chargement%20du%20CV"><i class="fas fa-envelope me-2"></i>mongbetnjiassesoufiane@gmail.com</a><br>
+                        <a href="tel:+237659231045"><i class="fas fa-phone me-2"></i>+237 659 23 10 45</a>
+                    </p>
+                    <p class="text-muted small">Vous recevrez un mot de passe à saisir ci-dessous.</p>
+                    <form id="cvForm" autocomplete="off">
+                        <label for="cvPassword" class="form-label">Mot de passe</label>
+                        <input type="password" id="cvPassword" class="form-control" placeholder="Saisissez le mot de passe" required>
+                        <div id="cvMessage" class="small mt-3" role="status"></div>
+                        <button type="submit" id="cvSubmit" class="btn btn-custom w-100 mt-3"><i class="fas fa-download me-2"></i>Débloquer et télécharger</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/cv-gate.js"></script>
+    <script src="assets/js/demos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
